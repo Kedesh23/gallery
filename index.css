@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+}
+
+.head{
+   text-align: center;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+
+button{
+    cursor: pointer;
+    padding: .5em;
+    margin: 3em 0 3em 0;
+}
+
+#gallery{
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#gallery img{
+    width: 30%;
+    transition: width .3s;
+}
+
+#gallery .inactive{
+    width: 0;
+    padding: 0;
+    transition: width .3s;
+}
+
+@media screen and (max-width: 600px) {
+
+    #gallery{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
